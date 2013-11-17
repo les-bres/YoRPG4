@@ -8,7 +8,7 @@ public class Troll extends Character{
         _speed = 1;}
 
         public String getName(){
-                return "Jabberwocky";}
+                return "Troll";}
                 
         public void specialize() {}
         
