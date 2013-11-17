@@ -15,7 +15,9 @@ public class Goblin extends Character{
     public void normalize(){}
     
     public String about(){
-	return "*placeholder*";}
+	return "Evil, mischievous creatures, the Goblin often travels in tribes." +
+		"Although small, they are fast and cunning."
+		"Never trust the words of a Goblin and never underestimate the strength of a Goblin Swarm";}
 
 
     public void swarm (){
