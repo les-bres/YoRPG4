@@ -18,4 +18,10 @@ public class Rogue {
     _health += damage;
   }
   
+  public String about() {
+    return "Rogues are seldom seen or heard, but they are nevertheless a constant annoyance to others." +
+    "  They have a passion for stealing, and are very good at it, as their stealth is unmatched by other creatures" + 
+    "  Although they are never achieve the fame of a warrior, a rogue is a significant adversary with many tricks up his sleave.";
+  }
+  
 }
