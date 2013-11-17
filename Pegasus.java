@@ -40,6 +40,10 @@ public class Pegasus extends Character {
     this.normalize();
   }
   
+  public void tameMe() {
+      _tame == true;
+  }
+  
   public String about() {
     return "Pegasus is a horse-like creature originating from Greek mythology.  " + 
     "It can fly using the two large wings on its sides, and uses this ability to its advantage while fighting.  " + 
