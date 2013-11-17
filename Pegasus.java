@@ -43,6 +43,8 @@ public class Pegasus extends Character {
     public void tameMe() {
 	_tamed = true;
     }
+    
+    public void tame( Pegasus target){}
   
     public String about() {
 	return "Pegasus is a horse-like creature originating from Greek mythology.  " + 
