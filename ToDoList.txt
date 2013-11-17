@@ -12,3 +12,4 @@ Main
 Extra
 1) Descriptions of Methods of what happened
 2) More skills for Adventuerer? eg. Rogues can stealth, Mages cast Fireball
+3) Editing YoRPG to make it more unique/our own
