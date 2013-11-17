@@ -14,5 +14,8 @@ public class Rogue {
   }
   
   public void takeHealth( Character victim ) {
-    int damage = (int) (_strength * attackRating) - 
+    int damage = (int) (_strength * attackRating) - victim.getDefense();
+    _health += damage;
   }
+  
+}
