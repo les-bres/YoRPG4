@@ -34,4 +34,3 @@ public class Ent extends Character {
   }
   
 }
-  }
