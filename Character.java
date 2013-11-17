@@ -6,7 +6,7 @@
 public abstract class Character {
 
     // note protected instance variables so subclasses can access:
-    protected int _health, _strength, _defense;
+    protected int _health, _strength, _defense, _speed;
     protected double _attackRating;
 
 
@@ -17,6 +17,10 @@ public abstract class Character {
 
     public int getDefense() {
 	return _defense;
+    }
+    
+    public int getSpeed() {
+    	return _speed;
     }
 
      public void lowerHP(int decreaser) {
