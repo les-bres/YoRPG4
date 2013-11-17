@@ -1,7 +1,3 @@
-// Leslie Bresnahan
-// pd 9
-// HW # 25
-// 2013-11-14
 
 public abstract class Character {
 
