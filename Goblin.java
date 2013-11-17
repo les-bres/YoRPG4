@@ -13,6 +13,8 @@ public class Goblin extends Character{
     public void specialize() {}
         
     public void normalize(){}
+
+    public void tame( Pegasus target){}
     
     public String about(){
 	return "Evil, mischievous creatures, the Goblin often travels in tribe raiding villages." +
