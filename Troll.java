@@ -12,12 +12,13 @@ public class Troll extends Character{
                 
         public void specialize() {}
         
-		    public void normalize(){}
+	public void normalize(){}
     
         public static abstract String about(){
                 return "*placeholder*";}
-
-░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░ 
+        public void useMeme(){
+	System.out.println(
+"░░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄░░░░░░░ 
 ░░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄░░░░ 
 ░░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█░░░ 
 ░░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░░█░░ 
@@ -31,4 +32,5 @@ public class Troll extends Character{
 ░░░░░▀▄░░░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█░░ 
 ░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░▒░░░█░ 
 ░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░░░░█░ 
-░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░ 
+░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░░░░█░░ ");}
+}
