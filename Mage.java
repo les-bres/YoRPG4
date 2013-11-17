@@ -18,6 +18,7 @@ public class Mage extends Character{
 	_strength = 100;
 	_defense = 40;
 	_attackRating = .4;
+	_speed = 2;
     }
 
     public Mage( String newMagicType) {
