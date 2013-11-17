@@ -1,4 +1,6 @@
 public class Rogue {
+  
+  private String _name;
 
   public Rogue() {
     _health = 75;
@@ -16,6 +18,20 @@ public class Rogue {
   public void takeHealth( Character victim ) {
     int damage = (int) (_strength * attackRating) - victim.getDefense();
     _health += damage;
+  }
+  
+  public String getName() {
+    return _name;
+  }
+  
+  public void specialize() {
+    _attackRating += .1;
+    _defense -= 1;
+  }
+  
+  public void normalize() {
+    _attackRating -= .1;
+    _defense +=1;
   }
   
   public String about() {
