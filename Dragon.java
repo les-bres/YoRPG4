@@ -15,7 +15,10 @@ public class Dragon extends Character{
     public void normalize(){}
     
     public String about(){
-	return "*placeholder*";}
+	return "Legend has it , Dragons are the largest known flying creature and among the rarest." +
+		"It is also the most feared creature with the ability to breath fire, impenetrable scales, and razor sharp claws" +
+		"Even for the most skilled adventurer, defeating a dragon is no easy feat." +
+		"However the greater the risk, the greater the reward, as dragons are hoarders of valuable tresure."}
 
     //Dragon's attacks
   
