@@ -1,4 +1,4 @@
-public class Rogue {
+public class Rogue extends Character {
   
   private String _name;
 
