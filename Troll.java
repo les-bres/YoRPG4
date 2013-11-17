@@ -15,6 +15,8 @@ public class Troll extends Character{
         
     public void normalize(){}
     
+    public void tame( Pegasus target){}
+    
     public String about(){
 	return "Trolls are descendants of giants and carry their same temperment.  " + 
 "Traditionally nomads, trolls are often found in caves hording gold or feasting on meat of any sort.  " + 
