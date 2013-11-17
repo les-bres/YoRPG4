@@ -14,6 +14,8 @@ public class Dragon extends Character{
         
     public void normalize(){}
     
+    public void tame( Pegasus target){}
+    
     public String about(){
 	return "Legend has it , Dragons are the largest known flying creature and among the rarest." +
 		"It is also the most feared creature with the ability to breath fire, impenetrable scales, and razor sharp claws" +
