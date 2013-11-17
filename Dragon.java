@@ -25,7 +25,6 @@ public class Dragon extends Character{
     public void breathFire(Character victim){
 	int Damage = _strength / 2; //ignores defense
 	victim.lowerHP (Damage);
-	//victim.setStatus(Burned);
     }
   
     public void Swipe (Character victim) {
