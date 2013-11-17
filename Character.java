@@ -22,6 +22,10 @@ public abstract class Character {
     public int getSpeed() {
     	return _speed;
     }
+    
+    public int getHealth() {
+    	return _health;
+    }
 
      public void lowerHP(int decreaser) {
 	if (_health > decreaser) {
