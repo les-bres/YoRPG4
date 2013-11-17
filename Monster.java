@@ -13,6 +13,7 @@ public class Monster extends Character{
 	_strength =  ((int) (Math.random() * 45)) + 20;
 	_defense = 20;
 	_attackRating = 1;
+	_speed = 3;
     }
 
     public String about() {
