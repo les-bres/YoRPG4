@@ -6,8 +6,8 @@
 public abstract class Character {
 
     // note protected instance variables so subclasses can access:
-    protected int _health, _strength, _defense, _speed;
-    protected double _attackRating;
+    protected int _health, _strength, _defense,;
+    protected double _attackRating, _speed;
 
 
     public boolean isAlive() {
@@ -44,8 +44,9 @@ public abstract class Character {
 	if (Damage < 0) {
 		Damage = 0;
 	}
-
-	victim.lowerHP( Damage );
+	if (Math.random() * 10.0 > victim.getSpeed()) {
+		victim.lowerHP( Damage );
+	}
 	return Damage;
     }
 
