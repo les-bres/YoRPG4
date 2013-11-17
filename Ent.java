@@ -1,4 +1,4 @@
-public class Ent {
+public class Ent extends Character {
 
   public Ent() {
     _health = 150;
