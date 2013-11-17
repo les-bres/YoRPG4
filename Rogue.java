@@ -33,7 +33,9 @@ public class Rogue extends Character {
 	_attackRating -= .1;
 	_defense +=1;
     }
-  
+
+    public void tame( Pegasus target){}
+    
     public String about() {
 	return "Rogues are seldom seen or heard, but they are nevertheless a constant annoyance to others." +
 	    "  They have a passion for stealing, and are very good at it, as their stealth is unmatched by other creatures" + 
