@@ -5,7 +5,7 @@ public class Rogue {
     _attackRating = 0.3;
     _defense = 50;
     _strength = 60;
-    _speed = 100;
+    _speed = 7;
   }
   
   public Rogue( String name ) {
