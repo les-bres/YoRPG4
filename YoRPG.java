@@ -65,7 +65,7 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
-	s = "Brave Adventure, What is your vocation?";
+	s = "Brave Adventure, What is your vocation?\n";
 	s += "Warrior\n";
 	s += "Mage\n";
 	s += "Rogue\n";
