@@ -25,6 +25,15 @@ public class Mage extends Character{
 	this();
  	_magicType = newMagicType;
     }
+    
+    public Mage( String newMagicType, Pegasus pegasus ) {
+    	_magicType = newMagicType;
+    	_health = 125;
+    	_strength = 150;
+    	_defense = 40;
+    	_attackRating = .8;
+    	_speed = 8;
+    }
 
     
     public String getMagicType() {
@@ -34,7 +43,7 @@ public class Mage extends Character{
 
     public void specialize() {
 	_defense -= 1;
-	_attackRating += .1;
+	_attackRating += .4;
     }
 
     public void normalize() {
@@ -50,7 +59,6 @@ public class Mage extends Character{
     public String getName() {
 	return "Mages do not have names.";
     }
-
 
     public static void main( String[] args ) {
 	Mage mike = new Mage("fire");
