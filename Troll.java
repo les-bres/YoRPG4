@@ -8,25 +8,28 @@ public class Troll extends Character{
         _attackRating = 1;
         _speed = 1;}
 
-        public String getName(){
-                return "Troll";}
+    public String getName(){
+	return "Troll";}
                 
-        public void specialize() {}
+    public void specialize() {}
         
-	public void normalize(){}
+    public void normalize(){}
     
-        public static abstract String about(){
-                return "*placeholder*";}
+    public String about(){
+	return "Trolls are descendants of giants and carry their same temperment.  " + 
+"Traditionally nomads, trolls are often found in caves hording gold or feasting on meat of any sort.  " + 
+"They are of very small intellect, which serves to make them extremely violent.  " +
+"The club is their typical weapon in combat, and when they fight they use little technique and much brute strength.";}
                 
-        public void useMeme();{}
+    public void useMeme(){}
         
-        public void club(Character victim);{
-        	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
-    		victim.lowerHP (Damage);
-        }
+    public void club(Character victim) {
+	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
+	victim.lowerHP (Damage);
+    }
         
-        public void angry();{
-       	if (_health < 100){
-    		_strength *= 2;}
-       	}
+    public void angry() {
+	if (_health < 100){
+	    _strength *= 2;}
+    }
 }
