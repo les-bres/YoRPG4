@@ -2,7 +2,7 @@ public class Dragon extends Character{
 
     public Dragon (){
         _health = 300;
-        _strength = 80;
+        _strength = 100;
         _defense = 50;
         _attackRating = 1;
         _speed = 5;}
