@@ -15,7 +15,7 @@ public class YoRPG {
     public final static int MAX_ENCOUNTERS = 5;
 
     //each round, a Warrior and a Monster will be instantiated
-    private Warrior pat;   //Is it man or woman?
+    private Character pat;   //Is it man or woman?
     private Monster smaug; //Friendly generic monster name, eh?
 
     private int moveCount;
@@ -49,6 +49,7 @@ public class YoRPG {
     public void newGame() {
 
 	String s;
+	String Vocation = "";
 	String name = "";
 	s = "Welcome to Ye Olde RPG!\n";
 
@@ -63,6 +64,20 @@ public class YoRPG {
 	    difficulty = Integer.parseInt( in.readLine() );
 	}
 	catch ( IOException e ) { }
+	
+	s = "Brave Adventure, What is your vocation?"
+	s += "Warrior\n"
+	s += "Mage\n"
+	s += "Rogue\n"
+	s += "Pegasus\n"
+	s += "Ent\n"
+	
+	System.out.print( s );
+	
+	try {
+	    Vocation = in.readLine();
+	}
+	catch ( IOException e ) { }
 
 	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
 	System.out.print( s );
@@ -74,7 +89,7 @@ public class YoRPG {
 
 
 	//instantiate the player's character
-	pat = new Warrior( name );
+	pat = new Vocation ( name );
 
     }//end newGame()
 
