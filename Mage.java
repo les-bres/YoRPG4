@@ -1,5 +1,3 @@
-
-
 public class Mage extends Character{
     
     // attributes:
@@ -9,59 +7,59 @@ public class Mage extends Character{
 
     // constructor
     public Mage() {
- 	_magicType = "earth";
-	_health = 125;
-	_strength = 100;
-	_defense = 40;
-	_attackRating = .4;
-	_speed = 2;
+	_magicType = "earth";
+        _health = 125;
+        _strength = 100;
+        _defense = 40;
+        _attackRating = .4;
+        _speed = 2;
     }
 
     public Mage( String newMagicType) {
-	this();
- 	_magicType = newMagicType;
+        this();
+	_magicType = newMagicType;
     }
     
     public Mage( String newMagicType, Pegasus pegasus ) {
-    	_magicType = newMagicType;
-    	_health = 125;
-    	_strength = 150;
-    	_defense = 40;
-    	_attackRating = .8;
-    	_speed = 8;
+	_magicType = newMagicType;
+	_health = 125;
+	_strength = 150;
+	_defense = 40;
+	_attackRating = .8;
+	_speed = 8;
     }
 
     
     public String getMagicType() {
-	return _magicType;
+        return _magicType;
     }
     
 
     public void specialize() {
-	_defense -= 1;
-	_attackRating += .4;
+        _defense -= 1;
+        _attackRating += .4;
     }
 
     public void normalize() {
-	_defense = 40;
-	_attackRating = .4;
+        _defense = 40;
+        _attackRating = .4;
     }
 
     public String about() {
-    return "Mages are those who possess power, with specialization in categories like earth, water, or fire... They must make the decision between good and evil for themselves.";
+	return "Mages are those who possess power, with specialization in categories like earth, water, or fire... They must make the decision between good and evil for themselves.";
     }
 
 
     public String getName() {
-	return "Mages do not have names.";
+        return "Mages do not have names.";
     }
     
     public void tame( Pegasus target) {
-    	if ( (int) (Math.random() * 2) == 0 ) {
-    		target.tameMe();
-    		_speed += 2;
-    		_attackRating += .2;
-    	}
+	if ( (int) (Math.random() * 2) == 0 ) {
+	    target.tameMe();
+	    _speed += 2;
+	    _attackRating += .2;
+	}
     }
     
 }
