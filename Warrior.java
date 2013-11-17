@@ -1,7 +1,3 @@
-// Leslie Bresnahan
-// pd 9
-// HW # 25
-// 2013-11-14
 
 
 public class Warrior extends Character{
@@ -46,23 +42,13 @@ public class Warrior extends Character{
     public String about() {
     return "Warriors are those of virtue, who exhibit their courage and integrity through their commitment to eradicating all evils from the face of the earth.";
     }
-
-
-    public static void main( String[] args ) {
-	Warrior mike = new Warrior("Mike");
-
-	System.out.println( "Is Alive?" );
-	System.out.println( mike.isAlive() );
-
-	System.out.println( "Defense?" );
-	System.out.println( mike.getDefense() );
-
-	System.out.println( "Name?" );
-	System.out.println( mike.getName() );
-
-	System.out.println( "About?" );
-	System.out.println( mike.about() );
-
+    
+    public void tame( Pegasus target) {
+    	if ( (int) (Math.random() * 2) == 0 ) {
+    		target.tameMe();
+    		_speed += 2;
+    		_attackRating += .2;
+    	}
     }
 
 }
