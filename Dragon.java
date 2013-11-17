@@ -7,25 +7,27 @@ public class Dragon extends Character{
         _attackRating = 1;
         _speed = 5;}
 
-        public String getName(){
-                return "Jabberwocky";}
+    public String getName(){
+	return "Jabberwocky";}
                 
-        public void specialize() {}
+    public void specialize() {}
         
-	public void normalize(){}
+    public void normalize(){}
     
-        public static abstract String about(){
-                return "*placeholder*";}
+    public String about(){
+	return "*placeholder*";}
 
-  //Dragon's attacks
+    //Dragon's attacks
   
-  public void breathFire(Character victim){
-    int Damage = _strength / 2; //ignores defense
-    victim.lowerHP (Damage);
-    //victim.setStatus(Burned);
+    public void breathFire(Character victim){
+	int Damage = _strength / 2; //ignores defense
+	victim.lowerHP (Damage);
+	//victim.setStatus(Burned);
     }
   
-  public void Swipe (Character victim){
-    int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
-    victim.lowerHP (Damage);}
+    public void Swipe (Character victim) {
+	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
+	victim.lowerHP (Damage);
+    }
+
 }
