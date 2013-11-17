@@ -7,18 +7,18 @@ public class Goblin extends Character{
         _attackRating = 10;
         _speed = 10;}
 
-        public String getName(){
-                return "Goblin Swarm";}
+    public String getName(){
+	return "Goblin Swarm";}
                 
-        public void specialize() {}
+    public void specialize() {}
         
-	public void normalize(){}
+    public void normalize(){}
     
-        public static abstract String about(){
-                return "*placeholder*";}
+    public String about(){
+	return "*placeholder*";}
 
 
-        public void swarm (){
+    public void swarm (){
         _attackRating = _health / 20;}
   
 }
