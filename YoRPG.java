@@ -65,12 +65,12 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
-	s = "Brave Adventure, What is your vocation?"
-	s += "Warrior\n"
-	s += "Mage\n"
-	s += "Rogue\n"
-	s += "Pegasus\n"
-	s += "Ent\n"
+	s = "Brave Adventure, What is your vocation?";
+	s += "Warrior\n";
+	s += "Mage\n";
+	s += "Rogue\n";
+	s += "Pegasus\n";
+	s += "Ent\n";
 	
 	System.out.print( s );
 	
