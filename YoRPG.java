@@ -73,13 +73,12 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
-	s = "Brave Adventure, What is your vocation?(State your class)\n";
-	s += "Options:\n";
-	s += "Warrior\n";
-	s += "Mage\n";
-	s += "Rogue\n";
-	s += "Pegasus\n";
-	s += "Ent\n";
+	s = "Brave Adventure, What is your vocation?\n";
+	s += "\t1:Warrior\n";
+	s += "\t2:Mage\n";
+	s += "\t3:Rogue\n";
+	s += "\t4:Pegasus\n";
+	s += "\t5:Ent\n";
 	s += "Selection: ";
 	
 	System.out.print( s );
@@ -90,17 +89,16 @@ public class YoRPG {
 	catch ( IOException e ) { }
 
 
-
 	//instantiate the player's character
-	if (Vocation.equals ("Warrior")){
+	if (Vocation.equals ("1")){
 	pat = new Warrior ( name );}
-	else if (Vocation.equals ("Mage")){
+	else if (Vocation.equals ("2")){
 	pat = new Mage( name );}
-	else if (Vocation.equals ("Rogue")){
+	else if (Vocation.equals ("3")){
 	pat = new Rogue( name );}
-	else if (Vocation.equals ("Pegasus")){
+	else if (Vocation.equals ("4")){
 	pat = new Pegasus( name );}
-	else if (Vocation.equals ("Ent")){
+	else if (Vocation.equals ("5")){
 	pat = new Pegasus( name );}
 	else {System.out.println(" Not a valid class selection"); }
 
