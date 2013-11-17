@@ -19,7 +19,6 @@ public class Warrior extends Character{
 	_strength = 100;
 	_defense = 40;
 	_attackRating = .4;
-	_speed = 50;
     }
 
     public Warrior( String newName) {
