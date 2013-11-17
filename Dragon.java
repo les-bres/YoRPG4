@@ -18,7 +18,7 @@ public class Dragon extends Character{
 	return "Legend has it , Dragons are the largest known flying creature and among the rarest." +
 		"It is also the most feared creature with the ability to breath fire, impenetrable scales, and razor sharp claws" +
 		"Even for the most skilled adventurer, defeating this overgrown reptile is no easy feat." +
-		"However the greater the risk, the greater the reward, as dragons are known for hoarding valuable treasure."}
+		"However the greater the risk, the greater the reward, as dragons are known for hoarding valuable treasure.";}
 
     //Dragon's attacks
   
