@@ -1,7 +1,3 @@
-// Leslie Bresnahan
-// pd 9
-// HW # 25
-// 2013-11-14
 
 
 public class Mage extends Character{
@@ -59,22 +55,13 @@ public class Mage extends Character{
     public String getName() {
 	return "Mages do not have names.";
     }
-
-    public static void main( String[] args ) {
-	Mage mike = new Mage("fire");
-
-	System.out.println( "Is Alive?" );
-	System.out.println( mike.isAlive() );
-
-	System.out.println( "Defense?" );
-	System.out.println( mike.getDefense() );
-
-	System.out.println( "Name?" );
-	System.out.println( mike.getName() );
-
-	System.out.println( "About?" );
-	System.out.println( mike.about() );
-
+    
+    public void tame( Pegasus target) {
+    	if ( (int) (Math.random() * 2) == 0 ) {
+    		target.tameMe();
+    		_speed += 2;
+    		_attackRating += .2;
+    	}
     }
-
+    
 }
