@@ -80,6 +80,7 @@ public class YoRPG {
 	s += "Rogue\n";
 	s += "Pegasus\n";
 	s += "Ent\n";
+	s += "Selection: ";
 	
 	System.out.print( s );
 	
