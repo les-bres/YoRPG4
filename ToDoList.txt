@@ -1,0 +1,14 @@
+Main
+1) Encountering a Random Monster
+2) Having a monster use a Random Attack
+    Dragon : Regular Attack, Breath Fire, or Swipre
+    Troll : Regular Attack, UseMeme, or Club
+3) Having Goblins use swarm to get weaker
+   Having Trolls use angry to get stronger
+4) Display current HP 
+5) Ability to Tame
+
+
+Extra
+1) Descriptions of Methods of what happened
+2) More skills for Adventuerer? eg. Rogues can stealth, Mages cast Fireball
