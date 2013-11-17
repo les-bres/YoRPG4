@@ -26,5 +26,4 @@ public class Troll extends Character{
        	if (_health < 100){
     		_strength *= 2;}
        	}
-       	}
 }
