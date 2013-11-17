@@ -29,6 +29,8 @@ public class Ent extends Character {
 	return _name;
     }
   
+    public void tame( Pegasus target){} 
+ 
     public String about() {
 	return "Ents are essentially living trees.  They are the guardians of the forests and detest anything that may threaten them.  " + 
 	    "They are extremely slow-talking and slow-moving creatures with extremely long lifespans.  They are some of the oldest creatures on Earth.  " +
