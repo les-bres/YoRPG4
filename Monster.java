@@ -18,6 +18,7 @@ public class Monster extends Character{
 
     public void normalize() {}
     public void specialize() {}
+    public void tame( Pegasus target){}
 
     public String about() {
 	return "A monster is the most misunderstood being in the realm.  He constantly " + 
