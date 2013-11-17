@@ -13,4 +13,6 @@ public class Rogue {
     _name = name;
   }
   
-  public 
+  public void takeHealth( Character victim ) {
+    int damage = (int) (_strength * attackRating) - 
+  }
