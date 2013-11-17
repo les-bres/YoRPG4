@@ -20,7 +20,10 @@ public class Troll extends Character{
                 
         public void useMeme();{}
         
-        public void club();{}
+        public void club(Character victim);{
+        	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
+    		victim.lowerHP (Damage);
+        }
         
         public void angry();{
        	if (_health < 100){
