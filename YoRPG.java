@@ -89,7 +89,17 @@ public class YoRPG {
 
 
 	//instantiate the player's character
-	pat = new Vocation ( name );
+	if (Vocation.equals ("Warrior")){
+	pat = new Warrior ( name );}
+	else if (Vocation.equals ("Mage")){
+	pat = new Mage( name );}
+	else if (Vocation.equals ("Rogue")){
+	pat = new Rogue( name );}
+	else if (Vocation.equals ("Pegasus")){
+	pat = new Pegasus( name );}
+	else if (Vocation.equals ("Ent")){
+	pat = new Pegasus( name );}
+	else {System.out.println(" Not a valid class selection"); }
 
     }//end newGame()
 
