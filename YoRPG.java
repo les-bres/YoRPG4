@@ -65,6 +65,14 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 	
+	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
+	System.out.print( s );
+
+	try {
+	    name = in.readLine();
+	}
+	catch ( IOException e ) { }
+	
 	s = "Brave Adventure, What is your vocation?(State your class)\n";
 	s += "Options:\n";
 	s += "Warrior\n";
@@ -80,13 +88,6 @@ public class YoRPG {
 	}
 	catch ( IOException e ) { }
 
-	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
-	System.out.print( s );
-
-	try {
-	    name = in.readLine();
-	}
-	catch ( IOException e ) { }
 
 
 	//instantiate the player's character
