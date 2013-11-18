@@ -191,12 +191,7 @@ public class YoRPG {
 		}
 		else if (monster.equals("goblin")) {
 			((Goblin)smaug).swarm();
-			n = Math.random();
-			if (n < 0.5) {
-				d2 = ((Goblin)smaug).swarm( pat );
-			}
-			else {
-				d2 = smaug.attack( pat );
+			d2 = smaug.attack( pat );
 			}
 		}
 
