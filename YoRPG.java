@@ -157,7 +157,7 @@ public class YoRPG {
 
 		if ( i == 2 )
 		    pat.specialize();
-		else
+		else{
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
