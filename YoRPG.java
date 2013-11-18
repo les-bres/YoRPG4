@@ -201,7 +201,7 @@ public class YoRPG {
 		
 		else if (monster.equals("pegasus")) {
 			pat.tame( (Pegasus)smaug );
-			if ( ((Pegasus)smaug).getTame().equals(false) ) {
+			if ( ((Pegasus)smaug).getTame() == false ) {
 				d2 = ((Pegasus)smaug).attack( pat );
 			}
 		}
