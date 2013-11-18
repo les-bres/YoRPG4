@@ -2,6 +2,7 @@ public class Warrior extends Character{
     
     // attributes:
     private String _name;
+    private boolean _hasPegasus;
     
     // constructor
     public Warrior() {
@@ -32,6 +33,9 @@ public class Warrior extends Character{
     public void normalize() {
         _defense = 50;
         _attackRating = .5;
+        if (_hasPegasus == true) {
+        	_attackRating += .2;
+        }
     }
     
     public void tame( Pegasus target) {
@@ -39,6 +43,7 @@ public class Warrior extends Character{
                     target.tameMe();
                     _speed += 2;
                     _attackRating += .2;
+                    _hasPegasus = true;
             }
     }
 
