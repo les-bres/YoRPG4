@@ -118,6 +118,8 @@ public class YoRPG {
 	String monster;
 	int healthInitial, healthFinal;
 
+	healthInitial = pat.getHealth();
+
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "Nothing to see here. Move along!" );
 
