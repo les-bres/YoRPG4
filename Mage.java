@@ -11,7 +11,7 @@ public class Mage extends Character{
         _health = 125;
         _strength = 100;
         _defense = 40;
-        _attackRating = .4;
+        _attackRating = .6;
         _speed = 2;
     }
 
@@ -37,7 +37,7 @@ public class Mage extends Character{
 
     public void specialize() {
         _defense = 20;
-        _attackRating = .8;
+        _attackRating = 1.2;
     }
 
     public void normalize() {
