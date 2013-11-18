@@ -122,22 +122,22 @@ public class YoRPG {
 
 	else {
 	    double n = (int) (Math.random() * 5);
-	    if (n == 10) {
+	    if (n == 0) {
 	    	System.out.println( "Lo, yonder monster approacheth!" );
 	    	smaug = new Monster();
 	    	monster = "monster";
 	    }
-	    else if (n == 10) {
+	    else if (n == 1) {
 	    	System.out.println( "Lo, yonder dragon approacheth!" );
 	    	smaug = new Dragon();
 	    	monster = "dragon";
 	    }
-	    else if (n == 20) {
+	    else if (n == 2) {
 	    	System.out.println( "Lo, yonder troll approacheth!" );
 	    	smaug = new Troll();
 	    	monster = "troll";
 	    }
-	    else if (n == 30) {
+	    else if (n == 3) {
 	    	System.out.println( "Lo, yonder goblins approacheth!" );
 	    	smaug = new Goblin();
 	    	monster = "goblin";
