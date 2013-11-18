@@ -13,7 +13,7 @@ public class Monster extends Character{
 
     // override abstract methods
     public String getName() {
-        return "Monsters do not have names.";
+        return "Monster";
     }
 
     public void normalize() {}
