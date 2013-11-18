@@ -8,7 +8,7 @@ public class Dragon extends Character{
         _speed = 5;}
 
     public String getName(){
-	return "Jabberwocky";}
+	return "Dragon";}
                 
     public void specialize() {}
         
