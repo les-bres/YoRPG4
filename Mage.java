@@ -51,7 +51,7 @@ public class Mage extends Character{
 
 
     public String getName() {
-        return "Mages do not have names.";
+        return "Mage";
     }
     
     public void tame( Pegasus target) {
