@@ -1,6 +1,6 @@
 Main
 1) Being able to select your class (DONE)
-2) Encountering a Random Monster
+2) Encountering a Random Monster (DONE)
 3) Having a monster use a Random Attack
     Dragon : Regular Attack, Breath Fire, or Swipre
     Troll : Regular Attack, UseMeme, or Club
