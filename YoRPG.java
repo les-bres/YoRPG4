@@ -116,6 +116,7 @@ public class YoRPG {
 	int i = 1;
 	int d1, d2;
 	String monster;
+	int healthInitial, healthFinal;
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "Nothing to see here. Move along!" );
