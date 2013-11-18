@@ -219,7 +219,7 @@ public class YoRPG {
 				    " points of damage.");
 
 		System.out.println( "Ye Olde opponent hit back for " + d2 +
-				    " points of damage.");
+				    " points of damage.  Hopefully you were able to dodge and maintained your health...");
 		System.out.println( "Calculate your next move, brave adventurer!  Remains of ye health be " + pat.getHealth());
 	    }//end while
 
