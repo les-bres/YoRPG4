@@ -30,8 +30,8 @@ public class Rogue extends Character {
     }
   
     public void normalize() {
-	_attackRating -= .1;
-	_defense +=1;
+	_attackRating = 1;
+	_defense = 30;
     }
 
     public void tame( Pegasus target){
