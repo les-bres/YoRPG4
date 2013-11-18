@@ -16,7 +16,7 @@ public class YoRPG {
 
     //each round, a Warrior and a Monster will be instantiated
     private Character pat;   //Is it man or woman?
-    private Monster smaug; //Friendly generic monster name, eh?
+    private Character smaug; //Friendly generic monster name, eh?
 
     private int moveCount;
     private boolean gameOver;
@@ -120,9 +120,23 @@ public class YoRPG {
 	    System.out.println( "Nothing to see here. Move along!" );
 
 	else {
-	    System.out.println( "Lo, yonder monster approacheth!" );
-
-	    smaug = new Monster();
+	    double n = Math.Random();
+	    if (n < 0.25) {
+	    	System.out.println( "Lo, yonder monster approacheth!" );
+	    	smaug = new Monster();
+	    }
+	    else if (n < 0.5) {
+	    	System.out.println( "Lo, yonder dragon approacheth!" );
+	    	smaug = new Dragon();
+	    }
+	    else if (n < 0.75) {
+	    	System.out.println( "Lo, yonder troll approacheth!" );
+	    	smaug = new Troll();
+	    }
+	    else {
+	    	System.out.println( "Lo, yonder goblins approacheth!" );
+	    	smaug = new Goblin();
+	    }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
