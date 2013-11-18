@@ -122,25 +122,30 @@ public class YoRPG {
 
 	else {
 	    double n = Math.random();
-	    if (n < 0.25) {
+	    if (n < 0.2) {
 	    	System.out.println( "Lo, yonder monster approacheth!" );
 	    	smaug = new Monster();
 	    	monster = "monster";
 	    }
-	    else if (n < 0.5) {
+	    else if (n < 0.4) {
 	    	System.out.println( "Lo, yonder dragon approacheth!" );
 	    	smaug = new Dragon();
 	    	monster = "dragon";
 	    }
-	    else if (n < 0.75) {
+	    else if (n < 0.6) {
 	    	System.out.println( "Lo, yonder troll approacheth!" );
 	    	smaug = new Troll();
 	    	monster = "troll";
 	    }
-	    else {
+	    else if (n < 0.8) {
 	    	System.out.println( "Lo, yonder goblins approacheth!" );
 	    	smaug = new Goblin();
 	    	monster = "goblin";
+	    }
+	    else {
+	    	System.out.println( "Lo, yonder pegasus approacheth!" );
+	    	smaug = new Pegasus();
+	    	monster = "pegasus";
 	    }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
@@ -157,7 +162,7 @@ public class YoRPG {
 
 		if ( i == 2 )
 		    pat.specialize();
-		else{
+		else
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
@@ -194,11 +199,17 @@ public class YoRPG {
 			d2 = smaug.attack( pat );
 			}
 		}
+		else (monster.equals("pegasus")) {
+			pat.tame( (Pegasus)smaug );
+			if ((Pegasus)smaug).getTame().equals(false) {
+				d2 = ((Pegasus)smaug).attack( pat );
+			}
+		}
 
 		System.out.println( pat.getName() + " dealt " + d1 +
 				    " points of damage.");
 
-		System.out.println( "Ye Olde Monster hit back for " + d2 +
+		System.out.println( "Ye Olde opponent hit back for " + d2 +
 				    " points of damage.");
 		System.out.println( "Calculate your next move, brave adventurer!  Remains of ye health be " + pat.getHealth());
 	    }//end while
@@ -230,6 +241,12 @@ public class YoRPG {
 
     public static void main( String[] args ) {
 
+	//As usual, move the begin-comment bar down as you progressively 
+	//test each new bit of functionality...
+
+	/*=============================================
+
+	//loading...
 	YoRPG game = new YoRPG();
 
 	int encounters = 0;
@@ -242,6 +259,7 @@ public class YoRPG {
 	}
 
 	System.out.println( "Thy game doth be over." );
+	  =============================================*/
 
     }//end main
 
