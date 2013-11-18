@@ -25,8 +25,8 @@ public class Warrior extends Character{
     
 
     public void specialize() {
-        _defense -= 1;
-        _attackRating += .1;
+        _defense = 20;
+        _attackRating += .8;
     }
 
     public void normalize() {
