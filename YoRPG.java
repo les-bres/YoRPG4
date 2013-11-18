@@ -177,7 +177,7 @@ public class YoRPG {
 			}
 		}
 		else if (monster.equals("troll")) {
-			smaug.angry();
+			((Troll)smaug).angry();
 			n = Math.random();
 			if (n < 0.33) {
 				d2 = ((Troll)smaug).useMeme( pat );
@@ -190,7 +190,7 @@ public class YoRPG {
 			}
 		}
 		else if (monster.equals("goblin")) {
-			smaug.swarm();
+			((Goblin)smaug).swarm();
 			n = Math.random();
 			if (n < 0.5) {
 				d2 = ((Goblin)smaug).swarm( pat );
