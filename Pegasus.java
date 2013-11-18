@@ -21,7 +21,7 @@ public class Pegasus extends Character {
     }
     
     public boolean getTame(){
-    	return _tamed
+    	return _tamed;
     }
   
     public void specialize() {
