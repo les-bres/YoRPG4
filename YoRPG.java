@@ -173,7 +173,7 @@ public class YoRPG {
 				d2 = smaug.swipe( pat );
 			}
 			else {
-				d2 = smaug.attac( pat );
+				d2 = smaug.attack( pat );
 			}
 		}
 		else if (monster.equals("troll")) {
