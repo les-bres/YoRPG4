@@ -1,11 +1,11 @@
 Main
 1) Being able to select your class (DONE)
 2) Encountering a Random Monster (DONE)
-3) Having a monster use a Random Attack
+3) Having a monster use a Random Attack (DONE)
     Dragon : Regular Attack, Breath Fire, or Swipre
     Troll : Regular Attack, UseMeme, or Club
-4) Having Goblins use swarm to get weaker
-   Having Trolls use angry to get stronger
+4) Having Goblins use swarm to get weaker (DONE)
+   Having Trolls use angry to get stronger (DONE)
 5) Display current HP 
 6) Ability to Tame
 
