@@ -6,7 +6,7 @@ public class Warrior extends Character{
     // constructor
     public Warrior() {
          _name = "no name";
-        _health = 125;
+        _health = 150;
         _strength = 100;
         _defense = 50;
         _attackRating = .5;
@@ -26,12 +26,12 @@ public class Warrior extends Character{
 
     public void specialize() {
         _defense = 25;
-        _attackRating += 1;
+        _attackRating = 1;
     }
 
     public void normalize() {
-        _defense = 40;
-        _attackRating = .4;
+        _defense = 50;
+        _attackRating = .5;
     }
     
     public void tame( Pegasus target) {
