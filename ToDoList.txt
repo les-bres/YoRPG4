@@ -6,7 +6,7 @@ Main
     Troll : Regular Attack, UseMeme, or Club
 4) Having Goblins use swarm to get weaker (DONE)
    Having Trolls use angry to get stronger (DONE)
-5) Display current HP 
+5) Display current HP (DONE)
 6) Ability to Tame
 
 
