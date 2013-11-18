@@ -19,6 +19,10 @@ public class Pegasus extends Character {
     public String getName() {
 	return _name;
     }
+    
+    public boolean getTame(){
+    	return _tamed
+    }
   
     public void specialize() {
 	_attackRating += .3;
