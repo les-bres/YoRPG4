@@ -166,6 +166,7 @@ public class YoRPG {
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
+		d2 = 0;
 		if (monster.equals("monster")) {
 			d2 = smaug.attack( pat );
 		}
