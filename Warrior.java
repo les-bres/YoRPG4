@@ -8,8 +8,8 @@ public class Warrior extends Character{
          _name = "no name";
         _health = 125;
         _strength = 100;
-        _defense = 40;
-        _attackRating = .4;
+        _defense = 50;
+        _attackRating = .5;
         _speed = 5;
     }
 
@@ -25,8 +25,8 @@ public class Warrior extends Character{
     
 
     public void specialize() {
-        _defense = 20;
-        _attackRating += .8;
+        _defense = 25;
+        _attackRating += 1;
     }
 
     public void normalize() {
