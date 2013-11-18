@@ -34,7 +34,13 @@ public class Rogue extends Character {
 	_defense +=1;
     }
 
-    public void tame( Pegasus target){}
+    public void tame( Pegasus target){
+    	if ( (int) (Math.random() * 2) == 0 ) {
+	    target.tameMe();
+	    _speed += 2;
+	    _attackRating += .2;
+	}
+    }
     
     public String about() {
 	return "Rogues are seldom seen or heard, but they are nevertheless a constant annoyance to others." +
