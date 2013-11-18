@@ -31,7 +31,6 @@ public class Troll extends Character{
         if (Math.random() * 10.0 > victim.getSpeed()) {
             victim.lowerHP( Damage );
         }
-        victim.lowerHP (Damage);
     }
         
     public void club(Character victim) {
