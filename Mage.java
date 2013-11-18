@@ -2,7 +2,7 @@ public class Mage extends Character{
     
     // attributes:
     private String _magicType;
-    
+    private String _name;
 
 
     // constructor
@@ -51,7 +51,7 @@ public class Mage extends Character{
 
 
     public String getName() {
-        return "Mages do not have names.";
+        return _name;
     }
     
     public void tame( Pegasus target) {
