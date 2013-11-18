@@ -23,7 +23,7 @@ public class Troll extends Character{
 "They are of very small intellect, which serves to make them extremely violent.  " +
 "The club is their typical weapon in combat, and when they fight they use little technique and much brute strength.";}
                 
-    public void useMeme(Character victim){
+    public int useMeme(Character victim){
     	int Damage = (int) ( (_strength * _attackRating) - victim.getDefense() );
         if (Damage < 0) {
             Damage = 0;
@@ -31,12 +31,13 @@ public class Troll extends Character{
         if (Math.random() * 10.0 > victim.getSpeed()) {
             victim.lowerHP( Damage );
         }
-       	victim.lowerHP (Damage);
+       	return Damage;
     }
         
-    public void club(Character victim) {
+    public int club(Character victim) {
 	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
 	victim.lowerHP (Damage);
+	return Damage;
     }
         
     public void angry() {
