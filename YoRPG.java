@@ -121,7 +121,7 @@ public class YoRPG {
 	    System.out.println( "Nothing to see here. Move along!" );
 
 	else {
-	    double n = Math.Random();
+	    double n = Math.random();
 	    if (n < 0.25) {
 	    	System.out.println( "Lo, yonder monster approacheth!" );
 	    	smaug = new Monster();
