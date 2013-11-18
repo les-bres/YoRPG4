@@ -25,8 +25,8 @@ public class Pegasus extends Character {
     }
   
     public void specialize() {
-	_attackRating += .3;
-	_defense -= 1;
+	_attackRating = 1;
+	_defense = 25;
     }
   
     public void normalize() {
