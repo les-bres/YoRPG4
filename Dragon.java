@@ -24,14 +24,16 @@ public class Dragon extends Character{
 
     //Dragon's attacks
   
-    public void breathFire(Character victim){
+    public int breathFire(Character victim){
 	int Damage = _strength / 2; //ignores defense
 	victim.lowerHP (Damage);
+	return Damage;
     }
   
-    public void swipe (Character victim) {
+    public int swipe (Character victim) {
 	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
 	victim.lowerHP (Damage);
+	return Damage;
     }
 
 }
