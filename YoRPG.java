@@ -218,7 +218,7 @@ public class YoRPG {
 			}
 		}
 		
-		healthFinal = pat.getHealth;
+		healthFinal = pat.getHealth();
 		
 		System.out.println( pat.getName() + " dealt " + d1 +
 				    " points of damage.");
