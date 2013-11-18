@@ -167,10 +167,10 @@ public class YoRPG {
 		else if (monster.equals("dragon")) {
 			n = Math.random();
 			if (n < 0.33) {
-				d2 = smaug.breathFire( pat );
+				d2 = ((Dragon)smaug).breathFire( pat );
 			}
 			else if (n < 0.66) {
-				d2 = smaug.swipe( pat );
+				d2 = ((Dragon)smaug).swipe( pat );
 			}
 			else {
 				d2 = smaug.attack( pat );
@@ -180,10 +180,10 @@ public class YoRPG {
 			smaug.angry();
 			n = Math.random();
 			if (n < 0.33) {
-				d2 = smaug.useMeme( pat );
+				d2 = ((Troll)smaug).useMeme( pat );
 			}
 			else if (n < 0.66) {
-				d2 = smaug.club( pat );
+				d2 = ((Troll)smaug).club( pat );
 			}
 			else {
 				d2 = smaug.attack( pat );
@@ -193,7 +193,7 @@ public class YoRPG {
 			smaug.swarm();
 			n = Math.random();
 			if (n < 0.5) {
-				d2 = smaug.swarm( pat );
+				d2 = ((Goblin)smaug).swarm( pat );
 			}
 			else {
 				d2 = smaug.attack( pat );
