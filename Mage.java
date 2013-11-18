@@ -42,7 +42,7 @@ public class Mage extends Character{
 
     public void normalize() {
         _defense = 40;
-        _attackRating = .4;
+        _attackRating = .6;
     }
 
     public String about() {
