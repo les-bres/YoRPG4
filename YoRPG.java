@@ -198,8 +198,8 @@ public class YoRPG {
 			((Goblin)smaug).swarm();
 			d2 = smaug.attack( pat );
 			}
-		}
-		else if (monster.equals("pegasus") {
+		
+		else if (monster.equals("pegasus")) {
 			pat.tame( (Pegasus)smaug );
 			if ( ((Pegasus)smaug).getTame().equals(false) ) {
 				d2 = ((Pegasus)smaug).attack( pat );
@@ -234,7 +234,6 @@ public class YoRPG {
 	    }
 	}//end else
 
-	return true;
     }//end playTurn()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -270,3 +269,4 @@ public class YoRPG {
 
 /*=============================================
   =============================================*/
+
