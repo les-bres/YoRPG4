@@ -115,6 +115,7 @@ public class YoRPG {
 
 	int i = 1;
 	int d1, d2;
+	String monster;
 
 	if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "Nothing to see here. Move along!" );
@@ -124,18 +125,22 @@ public class YoRPG {
 	    if (n < 0.25) {
 	    	System.out.println( "Lo, yonder monster approacheth!" );
 	    	smaug = new Monster();
+	    	monster = "monster";
 	    }
 	    else if (n < 0.5) {
 	    	System.out.println( "Lo, yonder dragon approacheth!" );
 	    	smaug = new Dragon();
+	    	monster = "dragon";
 	    }
 	    else if (n < 0.75) {
 	    	System.out.println( "Lo, yonder troll approacheth!" );
 	    	smaug = new Troll();
+	    	monster = "troll";
 	    }
 	    else {
 	    	System.out.println( "Lo, yonder goblins approacheth!" );
 	    	smaug = new Goblin();
+	    	monster = "goblin";
 	    }
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
@@ -156,7 +161,43 @@ public class YoRPG {
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
-		d2 = smaug.attack( pat );
+		int d2;
+		if (monster.equals("monster")) {
+			d2 = smaug.attack( pat );
+		}
+		else if (monster.equals("dragon")) {
+			double n = Math.random();
+			if (n < 0.33) {
+				d2 = smaug.breathFire( pat );
+			}
+			else if (n < 0.66) {
+				d2 = smaug.swipe( pat );
+			}
+			else {
+				d2 = smaug.attac( pat );
+			}
+		}
+		else if (monster.equals("troll")) {
+			double n = Math.random();
+			if (n < 0.33) {
+				d2 = smaug.useMeme( pat );
+			}
+			else if (n < 0.66) {
+				d2 = smaug.club( pat );
+			}
+			else {
+				d2 = smaug.attack( pat );
+			}
+		}
+		else if (monster.equals("goblin")) {
+			double n = Math.random();
+			if (n < 0.5) {
+				d2 = smaug.swarm( pat );
+			}
+			else {
+				d2 = smaug.attack( pat );
+			}
+		}
 
 		System.out.println( pat.getName() + " dealt " + d1 +
 				    " points of damage.");
