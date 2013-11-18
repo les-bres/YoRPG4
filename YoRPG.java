@@ -217,12 +217,20 @@ public class YoRPG {
 				System.out.println("Ye hath tamed a pegasus.  Your stealth and strength have upgraded, as well as your attack!");
 			}
 		}
-
+		
+		healthFinal = pat.getHealth;
+		
 		System.out.println( pat.getName() + " dealt " + d1 +
 				    " points of damage.");
 
 		System.out.println( "Ye Olde opponent hit back for " + d2 +
 				    " points of damage.  Hopefully you were able to dodge and maintained your health...");
+		if ( healthInitial == healthFinal) {
+			System.out.println( "Hazzah! You managed to dodge the attack of ye olde opponent");
+		}
+		else {
+			System.out.println( "Alas, you were unable to dodge, but do not fret!");
+		}
 		System.out.println( "Calculate your next move, brave adventurer!  Remains of ye health be " + pat.getHealth());
 	    }//end while
 
