@@ -29,7 +29,7 @@ public class Dragon extends Character{
 	victim.lowerHP (Damage);
     }
   
-    public void Swipe (Character victim) {
+    public void swipe (Character victim) {
 	int Damage = (int) ( (_strength * _attackRating * 1.5) - victim.getDefense() );
 	victim.lowerHP (Damage);
     }
