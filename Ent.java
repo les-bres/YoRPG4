@@ -16,8 +16,8 @@ public class Ent extends Character {
     }
   
     public void specialize() {
-	_attackRating += .1;
-	_defense -= 1;
+	_attackRating = .4;
+	_defense = 10;
     }
   
     public void normalize() {
