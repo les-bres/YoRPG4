@@ -15,6 +15,11 @@ public class Mage extends Character{
         _speed = 2;
     }
 
+   public Mage( String newName) {
+        this();
+         _name = newName;
+    }
+
     public Mage( String newMagicType) {
         this();
 	_magicType = newMagicType;
