@@ -4,8 +4,8 @@ public class Rogue extends Character {
 
     public Rogue() {
 	_health = 75;
-	_attackRating = 0.3;
-	_defense = 50;
+	_attackRating = 1;
+	_defense = 30;
 	_strength = 60;
 	_speed = 7;
     }
@@ -25,8 +25,8 @@ public class Rogue extends Character {
     }
   
     public void specialize() {
-	_attackRating += .1;
-	_defense -= 1;
+	_attackRating = 2;
+	_defense = 15;
     }
   
     public void normalize() {
