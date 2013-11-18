@@ -23,6 +23,7 @@ public class Goblin extends Character{
 
 
     public void swarm (){
-        _attackRating = _health / 20;}
+        _attackRating = _health / 20;
+    }
   
 }
