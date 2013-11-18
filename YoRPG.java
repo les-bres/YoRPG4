@@ -174,9 +174,11 @@ public class YoRPG {
 			n = Math.random();
 			if (n < 0.33) {
 				d2 = ((Dragon)smaug).breathFire( pat );
+				System.out.println("Thy opponent hath breathed Devil's fire upon ye.  Save yourself!");
 			}
 			else if (n < 0.66) {
 				d2 = ((Dragon)smaug).swipe( pat );
+				System.out.println("A might claw hath struck your head.  Invest in a helmet.");
 			}
 			else {
 				d2 = smaug.attack( pat );
@@ -187,9 +189,11 @@ public class YoRPG {
 			n = Math.random();
 			if (n < 0.33) {
 				d2 = ((Troll)smaug).useMeme( pat );
+				System.out.println("Your argument hath been refuted by a meme!  The embarrassment is unendurable.");
 			}
 			else if (n < 0.66) {
 				d2 = ((Troll)smaug).club( pat );
+				System.out.println("Next time you see a large club headed toward you, duck!");
 			}
 			else {
 				d2 = smaug.attack( pat );
@@ -204,6 +208,7 @@ public class YoRPG {
 			pat.tame( (Pegasus)smaug );
 			if ( ((Pegasus)smaug).getTame() == false ) {
 				d2 = ((Pegasus)smaug).attack( pat );
+				System.out.println("Some pegasi were not meant to be tamed!  And this one is angry...");
 			}
 		}
 
