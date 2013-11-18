@@ -210,6 +210,9 @@ public class YoRPG {
 				d2 = ((Pegasus)smaug).attack( pat );
 				System.out.println("Some pegasi were not meant to be tamed!  And this one is angry...");
 			}
+			else {
+				System.out.println("Ye hath tamed a pegasus.  Your stealth and strength have upgraded, as well as your attack!");
+			}
 		}
 
 		System.out.println( pat.getName() + " dealt " + d1 +
