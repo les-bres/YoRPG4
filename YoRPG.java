@@ -233,7 +233,7 @@ public class YoRPG {
 		return false;
 	    }
 	}//end else
-
+	return true;
     }//end playTurn()
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
